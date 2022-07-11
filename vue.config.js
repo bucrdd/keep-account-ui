@@ -3,5 +3,10 @@ module.exports = defineConfig({
   transpileDependencies: true,
   devServer: {
     port: 18090
+  },
+  configureWebpack: {
+    plugins: [
+      require("unplugin-vue-components/webpack"),
+    ],
   }
 });

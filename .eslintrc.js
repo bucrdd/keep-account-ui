@@ -12,6 +12,10 @@ module.exports = {
   },
   rules: {
     "semi": ["error", "always"],
-    "comma-dangle": ["warn", "never"]
+    "quotes": ["error", "double", {
+      "allowTemplateLiterals": false,
+      "avoidEscape": false
+    }],
+    "comma-dangle": ["warn", "only-multiline"]
   }
 };
