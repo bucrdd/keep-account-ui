@@ -5,9 +5,7 @@ module.exports = {
     node: true,
   },
   extends: [
-    "plugin:vue/vue3-essential",
-    "eslint:recommended",
-    // "plugin:prettier/recommended",
+    "plugin:vue/vue3-essential", "eslint:recommended", "plugin:prettier/recommended",
   ],
   parserOptions: {
     ecmaVersion: 2017,
@@ -20,7 +18,15 @@ module.exports = {
         avoidEscape: false,
       },
     ],
+    // Stylistic Issues
+    "max-len": [ "error", {
+        code: 120,
+        ignoreUrls: true,
+      },
+    ],
     "comma-dangle": ["warn", "only-multiline"],
+    "array-element-newline": ["warn", "consistant"],
+    "block-spacing": ["error", "always"],
   },
   overrides: [
     {
