@@ -2,11 +2,9 @@ const { defineConfig } = require("@vue/cli-service");
 module.exports = defineConfig({
   transpileDependencies: true,
   devServer: {
-    port: 18090
+    port: 18090,
   },
   configureWebpack: {
-    plugins: [
-      require("unplugin-vue-components/webpack"),
-    ],
-  }
+    plugins: [require("unplugin-vue-components/webpack")],
+  },
 });
